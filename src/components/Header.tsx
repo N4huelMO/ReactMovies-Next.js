@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { useRouter, useParams } from "next/navigation";
 import { kaushanScript } from "@/app/fonts";
 import Image from "next/image";
+import SearchBar from "./SearchBar";
 
 const Header = () => {
   const [headerBg, setHeaderBg] = useState(false);
@@ -53,6 +54,10 @@ const Header = () => {
             >
               React<span className="text-violet-400"> Movies</span>
             </h1>
+          </div>
+
+          <div className="grow flex justify-center items-center">
+            <SearchBar />
           </div>
 
           <div className="my-auto">
